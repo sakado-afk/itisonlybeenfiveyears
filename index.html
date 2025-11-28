@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accès protégé</title>
+  <style>
+    body {
+      font-family:  "URW Chancery L", cursive;
+      color: #DBD8F2;
+      background-image: url("fond/galaxie1.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .container {
+      background: #72148C;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 1px 2px 10px rgba(0,0,0,0.50);
+      max-width: 300px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+
+    input[type="password"] {
+      width: 94%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid#DBD8F2;
+      color : #DBD8F2;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      border: 1px outset ;
+      border-radius: 4px;
+      background:#B477F2;
+      color: #DBD8F2;
+  
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #461973;
+;
+    }
+
+    .error {
+      color: #DBD8F2;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      min-height: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Accès réservé</h1>
+    <input id="passwordInput" type="password" placeholder="Mot de passe">
+    <button onclick="checkPassword()">Entrer</button>
+    <div id="errorMsg" class="error"></div>
+  </div>
+
+  <script>
+    // ⚠ Pour un vrai site, il faut faire ça côté serveur (PHP, Node, etc.).
+    const GOOD_PASSWORD = "fnzeonf213098jfeziub2031984"; // change ce mot de passe
+
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      const errorMsg = document.getElementById("errorMsg");
+
+      if (input === GOOD_PASSWORD) {
+        // Redirection vers ta page protégée
+        window.location.href = "accueil.html"; // change le nom du fichier si besoin
+      } else {
+        errorMsg.textContent = "Mot de passe incorrect.";
+      }
+    }
+  </script>
+</body>
+</html>
