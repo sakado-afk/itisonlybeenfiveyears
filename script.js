@@ -46,9 +46,9 @@ const progressPercent = (audio.currentTime / audio.duration)*100;
 }
 
 //associer toutes les images aux musiques 
-associerMusique("bugplay", "audio/boyswillbebugs.mp3","image/play.png", "image/pause.png", "progressbug");
-associerMusique("malaga", "audio/malagasy.mp3", "image/play.png", "image/pause.png", "progressmala");
-associerMusique("playsour", "audio/sweet.mp3", "image/play.png", "image/pause.png", "progresssour");
+associerMusique("bugplay", "audio1/boyswillbebugs.mp3","image/play.png", "image/pause.png", "progressbug");
+associerMusique("malaga", "audio1/malagasy.mp3", "image/play.png", "image/pause.png", "progressmala");
+associerMusique("playsour", "audio1/sweet.mp3", "image/play.png", "image/pause.png", "progresssour");
 associerMusique("playpretty", "audio/pretty.mp3", "image/play.png", "image/pause.png", "progresspretty");
 associerMusique("playgosse", "audio/gosse.mp3", "image/play.png", "image/pause.png", "progressgosse");
 associerMusique("playcreep", "audio/creep.mp3","image/play.png", "image/pause.png", "progresscreep");
