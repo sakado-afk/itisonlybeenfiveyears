@@ -74,6 +74,7 @@ h2{
 
 #ptitmsg a{
     font-style: none;
+    color: var(--couleur-4);
 }
 
 
@@ -510,4 +511,5 @@ right: 300px;
 left: initial;
 animation-delay: 2.35s; 
 animation-duration: 2.10s; 
+
 }
